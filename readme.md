@@ -566,13 +566,6 @@ engine = Openie()
 
 pprint(engine.labels("bacteria"))
 
-arg1 = "what"
-rel = "kills"
-arg2 = "bacteria"
-corpora = ""
-query = '?arg1=%s&rel=%s&arg2=%s&corpora=%s' % (arg1, rel, arg2, corpora)
-pprint(engine.query("bacteria"))
-
 # more complex queries can be made
 arg1 = "what"
 rel = "kills"
