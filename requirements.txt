@@ -1,0 +1,8 @@
+requests
+vocabulary
+bs4
+wptools
+nltk
+sqlalchemy
+rdflib
+owlready2
