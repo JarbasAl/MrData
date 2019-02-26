@@ -858,16 +858,20 @@ except AssertionError:
 - MrDataThings are connected to MrDataProperties by "mrdata:has_property"
 
 
+
     'mrdata_ex:Mything', 'mrdata:has_property', 'mrdata_prop:some_prop'
 
 
+
 - MrDataProperties are connected to values by "mrdata:has_value"
+
 
 
     'mrdata_prop:some_prop', 'mrdata:has_value', 'value_of_prop'
     'mrdata_prop:some_prop2', 'mrdata:has_value', 'mrdata_ex:MrDataSQLThing#2'
     
     
+ 
 #### Triples Vocabulary
 
 Triples will use the following vocabulary, sufficient to express all 
