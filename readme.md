@@ -6,6 +6,36 @@ This is very early work, might be useful but it's unstable!
 
 Guaranteed to change over time
 
+- [Mr Data](#mr-data)
+  * [Search](#search)
+    + [ConceptNet](#conceptnet)
+    + [DBPedia](#dbpedia)
+    + [Wikidata](#wikidata)
+    + [Wikipedia](#wikipedia)
+    + [Genesis](#genesis)
+    + [Openie](#openie)
+    + [Wordnet](#wordnet)
+    + [Dictionary](#dictionary)
+  * [Base Data model](#base-data-model)
+    + [Individuals vs Classes](#individuals-vs-classes)
+    + [Properties](#properties)
+    + [Everything is triples](#everything-is-triples)
+      - [Triples Vocabulary](#triples-vocabulary)
+  * [Data Storage](#data-storage)
+    + [SQL Data Model](#sql-data-model)
+      - [SQL Data Store](#sql-data-store)
+    + [OWL Data Model](#owl-data-model)
+      - [OWL Data Store](#owl-data-store)
+    + [SKOS Data Model](#skos-data-model)
+      - [SKOS Data Store](#skos-data-store)
+    + [RDF Data Model](#rdf-data-model)
+      - [RDF Data Store](#rdf-data-store)
+  * [Queries](#queries)
+    + [SQL queries](#sql-queries)
+    + [SPARQL queries](#sparql-queries)
+  * [Reasoning](#reasoning)
+  * [Related Projects](#related-projects)
+  
 ## Search
 
 The internet is huge, data is structured in several forms, MrData provides 
