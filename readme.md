@@ -883,9 +883,9 @@ except AssertionError:
 
 
 
-    'mrdata_ex:Mything', 'mrdata:has_property', 'mrdata_prop:some_prop'
-    'mrdata_prop:some_prop', 'mrdata:has_value', 'value_of_prop'
-    'mrdata_prop:some_prop#2', 'mrdata:has_value', 'mrdata_ex:MyThing#2'
+       'mrdata_ex:Mything', 'mrdata:has_property', 'mrdata_prop:some_prop'
+       'mrdata_prop:some_prop', 'mrdata:has_value', 'value_of_prop'
+       'mrdata_prop:some_prop#2', 'mrdata:has_value', 'mrdata_ex:MyThing#2'
     
     
 #### Triples Vocabulary
