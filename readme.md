@@ -4,6 +4,8 @@ Unified Data for the SemanticWeb
 
 This is very early work, might be useful but it's unstable!
 
+Guaranteed to change over time
+
 ## Search
 
 The internet is huge, data is structured in several forms, MrData provides 
@@ -730,7 +732,7 @@ A base data model was created to be used as reference
 ```python
 from mister_data.data_models import MrDataThing, MrDataProperty
 
-thing = MrDataThing(MrDataSQLThingLThing#1")
+thing = MrDataThing("thing#1")
 print(thing.has_for_property)  # list of properties
 
 prop = MrDataProperty("some value")
@@ -773,10 +775,10 @@ from mister_data.data_models import MrDataProperty
 class Is_A(MrDataProperty):
     uri = "mrdata_prop:Is_A"
 
-MrDataSQLPropertyy classes
+# MrDataSQLProperty classes
 print(Is_A.uri)  # "mrdata_prop:Is_A"
-print(Is_A.has_value)  # <property object at 0xb782402c> / uMrDataSQL
-PropertyProperty instances
+
+# MrDataSQLProperty instances
 prop = Is_A(Animal)
 print(prop.uri)  # "mrdata_ex:Is_A"
 print(prop.has_value)  # <class '__main__.Animal'>
@@ -788,7 +790,6 @@ You may define properties for classes
 - When classes have properties, all individuals of that class also have that property
 
 ```python
-from mister_data.data_models import MrDataThing, MrDataProperty, UniqueProperty
 
 # Class Properties
 class Dog(MrDataThing):
@@ -806,12 +807,12 @@ Or we can assign properties for individuals only
 - Properties of individuals do not necessarily belong to their class
 
 ```python
-    class FourLeggedThing(MrDataThing):
-        uri = "mrdata:FourLeggedThing"
-        
-    dog.add_property(Is_A(FourLeggedThing))
-    print(dog.has_for_property)  # Is_A Animal, Is_A FourLeggedThing
-    print(dog.class_properties)  # Is_A Animal
+class FourLeggedThing(MrDataThing):
+    uri = "mrdata:FourLeggedThing"
+    
+dog.add_property(Is_A(FourLeggedThing))
+print(dog.has_for_property)  # Is_A Animal, Is_A FourLeggedThing
+print(dog.class_properties)  # Is_A Animal
 ```
 
 
@@ -823,7 +824,7 @@ Sometimes we want to only allow a single instance (per individual) for a propert
 
 ```python
 
-# Unique property
+# Unique/Functional property
 class Age(UniqueProperty):
     uri = "mrdata_prop:Age"
     
